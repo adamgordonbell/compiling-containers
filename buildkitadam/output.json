@@ -1,0 +1,82 @@
+{
+  "Op": {
+    "Op": {
+      "source": {
+        "identifier": "docker-image://docker.io/library/golang:1.13-alpine"
+      }
+    },
+    "platform": {
+      "Architecture": "amd64",
+      "OS": "linux"
+    },
+    "constraints": {}
+  },
+  "Digest": "sha256:1b8e7bb36a9335a1ba979e3d548d03af76a0a293cdd7b99e1269f799bbeefad0",
+  "OpMetadata": {
+    "caps": {
+      "source.image": true
+    }
+  }
+}
+{
+  "Op": {
+    "inputs": [
+      {
+        "digest": "sha256:1b8e7bb36a9335a1ba979e3d548d03af76a0a293cdd7b99e1269f799bbeefad0",
+        "index": 0
+      }
+    ],
+    "Op": {
+      "exec": {
+        "meta": {
+          "args": [
+            "go",
+            "--version"
+          ],
+          "env": [
+            "PATH=/usr/local/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+            "GOPATH=/go"
+          ],
+          "cwd": "/"
+        },
+        "mounts": [
+          {
+            "input": 0,
+            "dest": "/",
+            "output": 0
+          }
+        ]
+      }
+    },
+    "platform": {
+      "Architecture": "amd64",
+      "OS": "linux"
+    },
+    "constraints": {}
+  },
+  "Digest": "sha256:083aafa2a9a536cf2c4fa5f39582fdff0eeaa35544fcbf82865437d3b8d6ae8c",
+  "OpMetadata": {
+    "caps": {
+      "exec.meta.base": true,
+      "exec.mount.bind": true
+    }
+  }
+}
+{
+  "Op": {
+    "inputs": [
+      {
+        "digest": "sha256:083aafa2a9a536cf2c4fa5f39582fdff0eeaa35544fcbf82865437d3b8d6ae8c",
+        "index": 0
+      }
+    ],
+    "Op": null
+  },
+  "Digest": "sha256:51829a242dcc1e2fe2c2c1496909010282c7da58524995d667c98879ca08ea3a",
+  "OpMetadata": {
+    "caps": {
+      "constraints": true,
+      "platform": true
+    }
+  }
+}
