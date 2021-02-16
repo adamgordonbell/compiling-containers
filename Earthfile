@@ -4,4 +4,5 @@ WORKDIR /src
 build: 
     COPY . .
     RUN go build -o /dockerfile-frontend ./dockerfile/cmd/dockerfile-frontend
-    ENTRYPOINT ["/dockerfile-frontend"]
+    ENTRYPOINT ["/dockerfile-frontend"] 
+    SAVE IMAGE agbell/intercal:latest
