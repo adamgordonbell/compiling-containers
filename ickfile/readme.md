@@ -1,4 +1,4 @@
-# An INTERCAL frontend for Docker Build
+# ICKFILE : An INTERCAL frontend for Docker Build
 
 This is a syntax frontend for BuildKit that allows you to write Dockerfiles using a syntax based on [INTERCAL](https://en.wikipedia.org/wiki/INTERCAL)
 
@@ -6,18 +6,17 @@ This is a syntax frontend for BuildKit that allows you to write Dockerfiles usin
 ```
 #syntax=agbell/ick
 COME_FROM alpine
-e222 USER nagios
-<- /src
-WRITING root
+
 PLEASE echo "Finally a great syntax for creating docker images"
 DO ["/bin/sh"]
-ARE_YOU_OK --interval=5s --timeout=3s --retries=3 CMD ls --quiet
+ARE_YOU_OK CMD ls 
 ```
 
 ## Building
 ```
 ➜  docker build . -f ./Ickfile -t ick
-[+] Building 0.8s (9/9) FINISHED                               
+
+[+] Building Ickfile                            
  => [internal] load build definition from Ickfile         0.0s
  => => transferring dockerfile: 258B                      0.0s
  => [internal] load .dockerignore                         0.0s
