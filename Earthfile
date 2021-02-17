@@ -3,6 +3,6 @@ WORKDIR /src
 
 build: 
     COPY . .
-    RUN go build -o /dockerfile-frontend ./dockerfile/cmd/dockerfile-frontend
+    RUN go build -o /dockerfile-frontend -tags "netgo static_build osusergo" ./dockerfile/cmd/dockerfile-frontend
     ENTRYPOINT ["/dockerfile-frontend"] 
     SAVE IMAGE agbell/intercal:latest
