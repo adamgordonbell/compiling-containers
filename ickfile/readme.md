@@ -4,6 +4,8 @@ This is a syntax frontend for BuildKit that allows you to write Dockerfiles usin
 
 ## Example Ickfile
 ```
+➜  cat Ickfile 
+
 #syntax=agbell/ick
 COME_FROM alpine
 
