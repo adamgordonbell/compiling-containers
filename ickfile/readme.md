@@ -1,6 +1,6 @@
 # An INTERCAL frontend for Docker Build
 
-This is a syntax frontend for buildkit that allows you to write dockerfiles using a syntax based on INTERCAL
+This is a syntax frontend for BuildKit that allows you to write Dockerfiles using a syntax based on [INTERCAL](https://en.wikipedia.org/wiki/INTERCAL)
 
 ## Example Ickfile
 ```
@@ -45,14 +45,14 @@ It Works!
 ## Instructions:
 
 ### COME FROM
-This is one of INTERCAL's most innovative features and is now available for `docker build`. In an Ickfile it causes the container image to inherit from the listed base image.  The base image need not be created with an Ickfile, although that is preferred.
+This is one of INTERCAL's [most innovative features](https://en.wikipedia.org/wiki/COMEFROM) and is now available for `docker build`. In an Ickfile, it causes the container image to inherit from the listed base image.  The base image need not be created with an Ickfile, although that is preferred.
 
 ```
 COME_FROM alpine
 ```
 
 ### PLEASE
-Excute something
+Execute something
 ```
 PLEASE ["/bin/bash", "-c", "echo hello"]
 ```
@@ -86,11 +86,11 @@ STASH hom* /mydir/
 ```
 
 # Usage
-No installation neccary. Just add this line to your Dockerfile:
+No installation is necessary. Just add this line to your Dockerfile:
 ```
 #syntax=agbell/ick
 ```
-And enable buildkit and build:
+And enable BuildKit and build:
 ```
 DOCKER_BUILDKIT=1 docker build .
 ``` 
