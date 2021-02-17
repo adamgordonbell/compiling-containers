@@ -1,0 +1,8 @@
+#syntax=agbell/ick
+COME_FROM alpine
+e222 USER nagios
+<- /src
+WRITING root
+PLEASE echo "Finally a great syntax for creating docker images!"
+DO ["/bin/sh"]
+ARE_YOU_OK --interval=5s --timeout=3s --retries=3 CMD ls --quiet
