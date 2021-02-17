@@ -77,7 +77,7 @@ This option is deliberately undocumented.
 This command tells Docker how to test that the container is working.
 
 ```
-ARE_YOU_OK --interval=5s --timeout=3s --retries=3 CMD ls --quiet
+ARE_YOU_OK CMD ls 
 ```
 
 ### STASH
