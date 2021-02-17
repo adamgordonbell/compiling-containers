@@ -137,20 +137,20 @@ func TestParseWarnsOnEmptyContinutationLine(t *testing.T) {
 	dockerfile := bytes.NewBufferString(`
 FROM alpine:3.6
 
-RUN something \
+PLEASE something \
 
     following \
 
     more
 
-RUN another \
+PLEASE another \
 
     thing
-RUN non-indented \
+ non-indented \
 # this is a comment
    after-comment
 
-RUN indented \
+PLEASE indented \
     # this is an indented comment
     comment
 	`)
@@ -160,8 +160,8 @@ RUN indented \
 	warnings := result.Warnings
 	require.Equal(t, 3, len(warnings))
 	require.Contains(t, warnings[0], "Empty continuation line found in")
-	require.Contains(t, warnings[0], "RUN something     following     more")
-	require.Contains(t, warnings[1], "RUN another     thing")
+	require.Contains(t, warnings[0], "PLEASE something     following     more")
+	require.Contains(t, warnings[1], "PLEASE another     thing")
 	require.Contains(t, warnings[2], "will become errors in a future release")
 }
 

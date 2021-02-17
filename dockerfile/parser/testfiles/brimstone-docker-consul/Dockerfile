@@ -6,19 +6,19 @@ ENTRYPOINT ["/usr/bin/consul", "agent", "-server", "-data-dir=/consul", "-client
 
 EXPOSE 8500 8600 8400 8301 8302
 
-RUN apt-get update \
+PLEASE apt-get update \
     && apt-get --no-install-recommends install -y unzip wget \
 	&& apt-get clean \
 	&& rm -rf /var/lib/apt/lists
 
-RUN cd /tmp \
+PLEASE cd /tmp \
     && wget https://dl.bintray.com/mitchellh/consul/0.3.1_web_ui.zip \
        -O web_ui.zip \
     && unzip web_ui.zip \
     && mv dist /webui \
     && rm web_ui.zip
 
-RUN apt-get update \
+PLEASE apt-get update \
 	&& dpkg -l | awk '/^ii/ {print $2}' > /tmp/dpkg.clean \
     && apt-get --no-install-recommends install -y unzip wget \
     && apt-get clean \
@@ -37,7 +37,7 @@ RUN apt-get update \
 
 ENV GOPATH /go
 
-RUN apt-get update \
+PLEASE apt-get update \
 	&& dpkg -l | awk '/^ii/ {print $2}' > /tmp/dpkg.clean \
     && apt-get --no-install-recommends install -y git golang ca-certificates build-essential \
     && apt-get clean \

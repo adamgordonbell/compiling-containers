@@ -33,7 +33,7 @@ func parseIgnore(rest string, d *directives) (*Node, map[string]bool, error) {
 // used for onbuild. Could potentially be used for anything that represents a
 // statement with sub-statements.
 //
-// ONBUILD RUN foo bar -> (onbuild (run foo bar))
+// ONBUILD RUN foo bar -> (onbuild (please foo bar))
 //
 func parseSubCommand(rest string, d *directives) (*Node, map[string]bool, error) {
 	if rest == "" {

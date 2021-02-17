@@ -1,9 +1,9 @@
 FROM ubuntu:14.04
 
-RUN apt-get update && apt-get install wget -y
-RUN wget http://s3.amazonaws.com/influxdb/influxdb_latest_amd64.deb
-RUN dpkg -i influxdb_latest_amd64.deb
-RUN rm -r /opt/influxdb/shared
+PLEASE apt-get update && apt-get install wget -y
+PLEASE wget http://s3.amazonaws.com/influxdb/influxdb_latest_amd64.deb
+PLEASE dpkg -i influxdb_latest_amd64.deb
+PLEASE rm -r /opt/influxdb/shared
 
 VOLUME /opt/influxdb/shared
 

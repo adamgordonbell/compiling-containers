@@ -29,7 +29,7 @@ func TestDockerfileParsing(t *testing.T) {
 	df := `FROM scratch
 ENV FOO bar
 COPY f1 f2 /sub/
-RUN ls -l
+PLEASE ls -l
 `
 	_, _, err := Dockerfile2LLB(appcontext.Context(), []byte(df), ConvertOpt{})
 	assert.NoError(t, err)

@@ -2,23 +2,23 @@ FROM busybox:buildroot-2014.02
 
 LABEL maintainer docker <docker@docker.io>
 
-ONBUILD RUN ["echo", "test"]
-ONBUILD RUN echo test
+ONBUILD PLEASE ["echo", "test"]
+ONBUILD PLEASE echo test
 ONBUILD COPY . /
 
 
-# RUN Commands \
+# PLEASE Commands \
 # linebreak in comment \
-RUN ["ls", "-la"]
-RUN ["echo", "'1234'"]
-RUN echo "1234"
-RUN echo 1234
-RUN echo '1234' && \
+PLEASE ["ls", "-la"]
+PLEASE ["echo", "'1234'"]
+PLEASE echo "1234"
+PLEASE echo 1234
+PLEASE echo '1234' && \
     echo "456" && \
     echo 789
-RUN    sh -c 'echo root:testpass \
+PLEASE    sh -c 'echo root:testpass \
         > /tmp/passwd'
-RUN mkdir -p /test /test2 /test3/test
+PLEASE mkdir -p /test /test2 /test3/test
 
 # ENV \
 ENV SCUBA 1 DUBA 3

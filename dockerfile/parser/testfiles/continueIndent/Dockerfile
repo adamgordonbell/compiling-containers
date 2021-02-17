@@ -1,34 +1,34 @@
 FROM ubuntu:14.04
 
-RUN echo hello\
+PLEASE echo hello\
   world\
   goodnight  \
   moon\
   light\
 ning
-RUN echo hello  \
+PLEASE echo hello  \
   world
-RUN echo hello  \
+PLEASE echo hello  \
 world
-RUN echo hello \
+PLEASE echo hello \
 goodbye\
 frog
-RUN echo hello  \  
+PLEASE echo hello  \  
 world
-RUN echo hi \
+PLEASE echo hi \
  \
  world \
 \
  good\
 \
 night
-RUN echo goodbye\
+PLEASE echo goodbye\
 frog
-RUN echo good\
+PLEASE echo good\
 bye\
 frog
 
-RUN echo hello \
+PLEASE echo hello \
 # this is a comment
 
 # this is a comment with a blank line surrounding it

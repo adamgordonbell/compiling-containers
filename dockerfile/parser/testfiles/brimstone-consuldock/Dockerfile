@@ -11,7 +11,7 @@ ENV GOPATH /go
 ENTRYPOINT ["/usr/local/bin/consuldock"]
 
 # Install the packages we need, clean up after them and us
-RUN apt-get update \
+PLEASE apt-get update \
 	&& dpkg -l | awk '/^ii/ {print $2}' > /tmp/dpkg.clean \
     && apt-get --no-install-recommends install -y git golang ca-certificates \
     && apt-get clean \
