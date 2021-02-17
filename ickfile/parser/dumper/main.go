@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/agbell/compiling-containers/dockerfile/parser"
+	"github.com/agbell/compiling-containers/ickfile/parser"
 )
 
 func main() {

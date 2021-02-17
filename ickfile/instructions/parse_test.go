@@ -5,8 +5,8 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/agbell/compiling-containers/dockerfile/command"
-	"github.com/agbell/compiling-containers/dockerfile/parser"
+	"github.com/agbell/compiling-containers/ickfile/command"
+	"github.com/agbell/compiling-containers/ickfile/parser"
 	"github.com/stretchr/testify/require"
 )
 

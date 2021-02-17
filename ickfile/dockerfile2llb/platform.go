@@ -1,7 +1,7 @@
 package dockerfile2llb
 
 import (
-	"github.com/agbell/compiling-containers/dockerfile/instructions"
+	"github.com/agbell/compiling-containers/ickfile/instructions"
 	"github.com/containerd/containerd/platforms"
 	specs "github.com/opencontainers/image-spec/specs-go/v1"
 )

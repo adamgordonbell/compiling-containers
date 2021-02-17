@@ -14,8 +14,8 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/agbell/compiling-containers/dockerfile/instructions"
-	"github.com/agbell/compiling-containers/dockerfile/parser"
+	"github.com/agbell/compiling-containers/ickfile/instructions"
+	"github.com/agbell/compiling-containers/ickfile/parser"
 	"github.com/containerd/containerd/platforms"
 	"github.com/docker/distribution/reference"
 	"github.com/docker/docker/pkg/signal"

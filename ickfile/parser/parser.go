@@ -11,7 +11,7 @@ import (
 	"strings"
 	"unicode"
 
-	"github.com/agbell/compiling-containers/dockerfile/command"
+	"github.com/agbell/compiling-containers/ickfile/command"
 	"github.com/pkg/errors"
 )
 

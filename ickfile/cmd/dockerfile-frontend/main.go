@@ -1,7 +1,7 @@
 package main
 
 import (
-	dockerfile "github.com/agbell/compiling-containers/dockerfile/builder"
+	dockerfile "github.com/agbell/compiling-containers/ickfile/builder"
 	"github.com/moby/buildkit/frontend/gateway/grpcclient"
 	"github.com/moby/buildkit/util/appcontext"
 	"github.com/sirupsen/logrus"

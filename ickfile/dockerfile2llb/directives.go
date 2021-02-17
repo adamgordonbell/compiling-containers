@@ -6,7 +6,7 @@ import (
 	"regexp"
 	"strings"
 
-	"github.com/agbell/compiling-containers/dockerfile/parser"
+	"github.com/agbell/compiling-containers/ickfile/parser"
 )
 
 const keySyntax = "syntax"

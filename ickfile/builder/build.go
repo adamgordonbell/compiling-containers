@@ -13,8 +13,8 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/agbell/compiling-containers/dockerfile/dockerfile2llb"
-	"github.com/agbell/compiling-containers/dockerfile/parser"
+	"github.com/agbell/compiling-containers/ickfile/dockerfile2llb"
+	"github.com/agbell/compiling-containers/ickfile/parser"
 	"github.com/containerd/containerd/platforms"
 	controlapi "github.com/moby/buildkit/api/services/control"
 	"github.com/moby/buildkit/client/llb"

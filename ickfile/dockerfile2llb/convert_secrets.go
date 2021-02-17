@@ -3,7 +3,7 @@ package dockerfile2llb
 import (
 	"path"
 
-	"github.com/agbell/compiling-containers/dockerfile/instructions"
+	"github.com/agbell/compiling-containers/ickfile/instructions"
 	"github.com/moby/buildkit/client/llb"
 	"github.com/pkg/errors"
 )
