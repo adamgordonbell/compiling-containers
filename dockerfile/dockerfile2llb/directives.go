@@ -6,7 +6,7 @@ import (
 	"regexp"
 	"strings"
 
-	"github.com/moby/buildkit/frontend/dockerfile/parser"
+	"github.com/agbell/compiling-containers/dockerfile/parser"
 )
 
 const keySyntax = "syntax"

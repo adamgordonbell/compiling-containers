@@ -21,6 +21,7 @@ import (
 	"testing"
 	"time"
 
+	"github.com/agbell/compiling-containers/dockerfile/dockerfile2llb"
 	"github.com/containerd/containerd"
 	"github.com/containerd/containerd/content"
 	"github.com/containerd/containerd/namespaces"
@@ -30,7 +31,6 @@ import (
 	"github.com/moby/buildkit/client"
 	"github.com/moby/buildkit/client/llb"
 	"github.com/moby/buildkit/frontend/dockerfile/builder"
-	"github.com/moby/buildkit/frontend/dockerfile/dockerfile2llb"
 	gateway "github.com/moby/buildkit/frontend/gateway/client"
 	"github.com/moby/buildkit/frontend/subrequests"
 	"github.com/moby/buildkit/identity"

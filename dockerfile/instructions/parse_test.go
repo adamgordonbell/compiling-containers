@@ -5,8 +5,8 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/moby/buildkit/frontend/dockerfile/command"
-	"github.com/moby/buildkit/frontend/dockerfile/parser"
+	"github.com/agbell/compiling-containers/dockerfile/command"
+	"github.com/agbell/compiling-containers/dockerfile/parser"
 	"github.com/stretchr/testify/require"
 )
 

@@ -3,7 +3,7 @@ package dockerfile2llb
 import (
 	"testing"
 
-	"github.com/moby/buildkit/frontend/dockerfile/instructions"
+	"github.com/agbell/compiling-containers/dockerfile/instructions"
 	"github.com/moby/buildkit/frontend/dockerfile/shell"
 	"github.com/moby/buildkit/util/appcontext"
 	"github.com/stretchr/testify/assert"
