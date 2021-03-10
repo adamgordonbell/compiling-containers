@@ -77,13 +77,13 @@ This option is deliberately undocumented.
 This command tells Docker how to test that the container is working.
 
 ```
-ARE_YOU_OK CMD ls 
+ARE_YOU_OK ls 
 ```
 
 ### STASH
 Stash files in the container image.
 ```
-STASH hom* /mydir/
+STASH . /mydir/
 ```
 
 # Usage
