@@ -1,5 +1,5 @@
 #syntax=agbell/ick
 COME_FROM alpine
-STASH readme.md readme.md
-PLEASE echo "custom frontend built" > /built.txt
+STASH README.md README.md
+PLEASE echo "custom ickfile frontend built" > /build.txt
 

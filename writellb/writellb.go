@@ -19,5 +19,5 @@ func main() {
 func createLLBState() llb.State {
 	return llb.Image("docker.io/library/alpine").
 		File(llb.Copy(llb.Local("context"), "README.md", "README.md")).
-		Run(llb.Args([]string{"/bin/sh", "-c", "echo \"programmatically built\" > /built.txt"})).Root()
+		Run(llb.Args([]string{"/bin/sh", "-c", "echo \"programmatically built\" > /build.txt"})).Root()
 }
