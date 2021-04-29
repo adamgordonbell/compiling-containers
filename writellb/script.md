@@ -80,12 +80,18 @@ This is cool because you can use all abstraction and control from and libraries 
 * needs to generate LLB
 
  I did this: 
-
  ICK file - trivial programming langauge
+Let's build it:
+```
+docker build . -f ickfile.Dockerfile -t agbell/demo4
+```
+```
+docker push agbell/demo4
+```
 
 This is my ick file
 ```
-docker build . -f ./ickfile/Ickfile -t demo4
+docker build . -f ./ickfile/Ickfile -t demo5
 ```
 
 ```

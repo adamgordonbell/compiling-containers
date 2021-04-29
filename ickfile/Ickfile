@@ -1,4 +1,4 @@
-#syntax=agbell/ick
+#syntax=agbell/demo4
 COME_FROM alpine
 STASH README.md README.md
 PLEASE echo "custom ickfile frontend built" > /build.txt
